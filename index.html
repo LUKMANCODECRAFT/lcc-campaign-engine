@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCC CopyStrike Engine v2.0 - AI Campaign & Copywriting SaaS Suite</title>
+    <!-- Meta tags for SEO & rich preview -->
+    <meta name="description" content="Next-Generation AI Campaign Generator & Automated Copywriting Studio with Live Device Mockups and Performance Analytics.">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- SIDEBAR NAVIGATION -->
+        <aside class="sidebar">
+            <div>
+                <div class="brand-header">
+                    <div class="brand-logo-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div>
+                        <div class="brand-title">LCC CopyStrike <span class="brand-badge">v2.0</span></div>
+                        <div style="font-size: 0.75rem; color: var(--text-dim);">Campaign Engine SaaS</div>
+                    </div>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item active" data-tab="studio">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>Copy Studio</span>
+                    </li>
+                    <li class="nav-item" data-tab="mockups">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <span>Live Mockups</span>
+                    </li>
+                    <li class="nav-item" data-tab="analytics">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Analytics & Funnel</span>
+                    </li>
+                    <li class="nav-item" data-tab="vault">
+                        <i class="fa-solid fa-box-archive"></i>
+                        <span>Campaign Vault</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <div class="widget-title">AI Engine Status</div>
+                <div class="engine-status">
+                    <span class="status-dot"></span>
+                    <span>CopyStrike v2 Active</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN WRAPPER -->
+        <div class="main-wrapper">
+            <!-- TOP BAR -->
+            <header class="topbar">
+                <div class="page-headline">
+                    <h1 id="topbar-title">AI Copy Studio</h1>
+                    <p id="topbar-desc">Generate high-converting multi-channel copywriting & campaign strategies.</p>
+                </div>
+                <div class="topbar-actions">
+                    <button class="btn-secondary" id="btn-load-preset">
+                        <i class="fa-solid fa-lightbulb"></i> Load Preset
+                    </button>
+                    <button class="btn-primary" id="btn-quick-save">
+                        <i class="fa-solid fa-floppy-disk"></i> Save Campaign
+                    </button>
+                </div>
+            </header>
+
+            <!-- VIEW 1: COPY STUDIO -->
+            <main id="view-studio" class="view-panel active">
+                <div class="studio-grid">
+                    <!-- LEFT FORM PANEL -->
+                    <section class="glass-panel">
+                        <div class="panel-header">
+                            <h2><i class="fa-solid fa-sliders"></i> Campaign Parameters</h2>
+                        </div>
+                        <form id="generator-form">
+                            <div class="form-group">
+                                <label for="niche">Business Industry / Niche</label>
+                                <select id="niche" class="form-control">
+                                    <option value="ecommerce">E-commerce Retail & Apparel</option>
+                                    <option value="tech">SaaS & B2B Tech Services</option>
+                                    <option value="realestate">Real Estate & Property Development</option>
+                                    <option value="fitness">Gym & Personal Training</option>
+                                    <option value="finance">Crypto & Wealth Management</option>
+                                    <option value="localservice">Local Home Services & Agencies</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="channel">Marketing Channel</label>
+                                <select id="channel" class="form-control">
+                                    <option value="email">Email Broadcast / Sequence</option>
+                                    <option value="sms">SMS Text Blaster</option>
+                                    <option value="meta">Meta (FB & IG) Sponsored Ad</option>
+                                    <option value="linkedin">LinkedIn B2B Direct Message</option>
+                                    <option value="google">Google Search Ad Copy</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tone">Tone of Voice Strategy</label>
+                                <select id="tone" class="form-control">
+                                    <option value="urgency">⚡ High Urgency & FOMO</option>
+                                    <option value="value">🤝 Trust, Value & Social Proof</option>
+                                    <option value="witty">😎 Witty, Bold & Conversational</option>
+                                    <option value="luxury">👑 High-Ticket Luxury & Exclusive</option>
+                                    <option value="story">📖 Story-Driven & Problem Solver</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="offer">Core Offer / Promo Incentive</label>
+                                <input type="text" id="offer" class="form-control" placeholder="e.g. 30% OFF all winter jackets or Free 14-Day Audit" value="25% OFF Annual Plans + VIP Onboarding" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="persona">Target Audience Persona</label>
+                                <input type="text" id="persona" class="form-control" placeholder="e.g. Busy Founders, Fashion Enthusiasts" value="Growth Marketers & Agency Owners">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cta-link">CTA Destination Link</label>
+                                <input type="text" id="cta-link" class="form-control" value="lcc-app.co/deal">
+                            </div>
+
+                            <button type="submit" class="btn-primary w-100" style="padding: 14px; font-size: 1rem;">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Dual A/B Copy
+                            </button>
+                        </form>
+                    </section>
+
+                    <!-- RIGHT WORKSPACE PANEL -->
+                    <section class="glass-panel">
+                        <div class="panel-header">
+                            <h2><i class="fa-solid fa-flask-vial"></i> A/B Variant Comparison Studio</h2>
+                            <span style="font-size: 0.8rem; color: var(--text-dim);">Live AI Outputs</span>
+                        </div>
+
+                        <!-- SCORE INSPECTOR BARS -->
+                        <div class="score-grid">
+                            <div class="score-card">
+                                <div class="score-label">Spam Rating</div>
+                                <div id="score-spam" class="score-value good">Low (0%)</div>
+                            </div>
+                            <div class="score-card">
+                                <div class="score-label">Readability</div>
+                                <div id="score-readability" class="score-value">88/100</div>
+                            </div>
+                            <div class="score-card">
+                                <div class="score-label">Sentiment</div>
+                                <div id="score-sentiment" class="score-value good">High Conv.</div>
+                            </div>
+                            <div class="score-card">
+                                <div class="score-label">Word Count</div>
+                                <div id="score-words" class="score-value">48 Words</div>
+                            </div>
+                        </div>
+
+                        <!-- VARIANTS CONTAINER -->
+                        <div class="variants-container">
+                            <!-- VARIANT A -->
+                            <div id="variant-a-card" class="variant-card selected">
+                                <div>
+                                    <span class="variant-badge badge-variant-a">
+                                        <i class="fa-solid fa-bolt"></i> Variant A (FOMO / Direct)
+                                    </span>
+                                    <div id="copy-output-a" class="copy-text-box">Click Generate to build Variant A copywriting...</div>
+                                </div>
+                                <div class="variant-footer">
+                                    <span id="stats-a" class="variant-stats">Proj. CTR: --</span>
+                                    <button class="btn-secondary" onclick="app.selectVariant('A')">
+                                        <i class="fa-solid fa-check"></i> Select A
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- VARIANT B -->
+                            <div id="variant-b-card" class="variant-card">
+                                <div>
+                                    <span class="variant-badge badge-variant-b">
+                                        <i class="fa-solid fa-heart-pulse"></i> Variant B (Social Proof / Soft)
+                                    </span>
+                                    <div id="copy-output-b" class="copy-text-box">Click Generate to build Variant B copywriting...</div>
+                                </div>
+                                <div class="variant-footer">
+                                    <span id="stats-b" class="variant-stats">Proj. CTR: --</span>
+                                    <button class="btn-secondary" onclick="app.selectVariant('B')">
+                                        <i class="fa-solid fa-check"></i> Select B
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ACTION BUTTONS -->
+                        <div style="display: flex; gap: 12px;">
+                            <button class="btn-secondary" id="btn-copy-selected" style="flex: 1;">
+                                <i class="fa-solid fa-copy"></i> Copy Active Variant
+                            </button>
+                            <button class="btn-primary" id="btn-test-analytics" style="flex: 1;">
+                                <i class="fa-solid fa-chart-pie"></i> Send to Funnel Analytics
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <!-- VIEW 2: LIVE DEVICE MOCKUPS -->
+            <main id="view-mockups" class="view-panel">
+                <section class="glass-panel">
+                    <div class="panel-header">
+                        <h2><i class="fa-solid fa-desktop"></i> Live Channel Device Simulator</h2>
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">Real-time Client Experience Render</span>
+                    </div>
+
+                    <div class="preview-tabs">
+                        <button class="tab-btn active" data-device="email">
+                            <i class="fa-solid fa-envelope"></i> Email Client
+                        </button>
+                        <button class="tab-btn" data-device="sms">
+                            <i class="fa-solid fa-comment-sms"></i> Smartphone SMS
+                        </button>
+                        <button class="tab-btn" data-device="meta">
+                            <i class="fa-solid fa-rectangle-ad"></i> Meta Sponsored Ad
+                        </button>
+                    </div>
+
+                    <div class="device-stage">
+                        <!-- EMAIL MOCKUP -->
+                        <div id="mockup-email" class="email-mockup">
+                            <div class="email-header-bar">
+                                <span class="email-dot dot-red"></span>
+                                <span class="email-dot dot-yellow"></span>
+                                <span class="email-dot dot-green"></span>
+                            </div>
+                            <div class="email-meta">
+                                <div id="email-subject-preview" class="email-subject">Subject: Exclusive VIP Offer Inside</div>
+                                <div class="email-sender">From: <strong>LCC Campaign Team</strong> &lt;growth@lcc-engine.io&gt;</div>
+                            </div>
+                            <div id="email-body-preview" class="email-body-render">
+                                Generate copy in the Copy Studio to preview how your audience will experience your email broadcast in their inbox!
+                            </div>
+                        </div>
+
+                        <!-- SMS MOCKUP -->
+                        <div id="mockup-sms" class="phone-mockup" style="display: none;">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen">
+                                <div class="sms-header">
+                                    <div class="sms-avatar">LCC</div>
+                                    <div class="sms-contact">LCC Strike Alert</div>
+                                    <div class="sms-time">Today 10:42 AM</div>
+                                </div>
+                                <div id="sms-body-preview" class="sms-bubble">
+                                    Generate copy to render SMS Text Message!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- META AD MOCKUP -->
+                        <div id="mockup-meta" class="ad-mockup" style="display: none;">
+                            <div class="ad-sponsor-row">
+                                <div class="ad-logo">LCC</div>
+                                <div>
+                                    <div class="ad-brand-name">LCC Official</div>
+                                    <div class="ad-sponsored-tag">Sponsored • <i class="fa-solid fa-globe"></i></div>
+                                </div>
+                            </div>
+                            <div class="ad-banner-img">
+                                <i class="fa-solid fa-bolt" style="font-size: 2.5rem; margin-bottom: 8px;"></i>
+                                <span id="ad-banner-text">SPECIAL PROMOTIONAL OFFER</span>
+                            </div>
+                            <div id="ad-body-preview" class="ad-caption">
+                                Sponsored Ad copy preview will appear here once generated in the Copy Studio.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- VIEW 3: ANALYTICS & FUNNEL ENGINE -->
+            <main id="view-analytics" class="view-panel">
+                <!-- METRICS METRIC CARDS -->
+                <div class="metrics-row">
+                    <div class="metric-card cyan">
+                        <div class="metric-title">Projected Open Rate</div>
+                        <div id="metric-open-rate" class="metric-value">34.2%</div>
+                        <div class="metric-sub"><i class="fa-solid fa-arrow-trend-up"></i> +4.5% vs Benchmark</div>
+                    </div>
+                    <div class="metric-card emerald">
+                        <div class="metric-title">Estimated Conversions</div>
+                        <div id="metric-conversions" class="metric-value">137</div>
+                        <div class="metric-sub"><i class="fa-solid fa-user-check"></i> High Intent Leads</div>
+                    </div>
+                    <div class="metric-card amber">
+                        <div class="metric-title">Projected Revenue</div>
+                        <div id="metric-revenue" class="metric-value">$6,850</div>
+                        <div class="metric-sub"><i class="fa-solid fa-dollar-sign"></i> Est. Gross Value</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-title">Est. Return on Spend (ROAS)</div>
+                        <div id="metric-roas" class="metric-value">4.8x</div>
+                        <div class="metric-sub"><i class="fa-solid fa-bolt"></i> High Efficiency</div>
+                    </div>
+                </div>
+
+                <div class="studio-grid">
+                    <!-- SIMULATION CONTROLS -->
+                    <section class="glass-panel">
+                        <div class="panel-header">
+                            <h2><i class="fa-solid fa-sliders"></i> Funnel Simulation Parameters</h2>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Target Audience Reach Size
+                                <span id="val-reach" class="slider-val">5,000</span>
+                            </label>
+                            <div class="slider-container">
+                                <input type="range" id="slider-reach" min="500" max="50000" step="500" value="5000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Average Order Value ($)
+                                <span id="val-aov" class="slider-val">$50</span>
+                            </label>
+                            <div class="slider-container">
+                                <input type="range" id="slider-aov" min="10" max="500" step="10" value="50">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Campaign Channel Variance
+                                <span id="val-variance" class="slider-val">Standard</span>
+                            </label>
+                            <select id="select-variance" class="form-control">
+                                <option value="1">Standard Broadcast Mode</option>
+                                <option value="1.25">🔥 High Urgency Offer Boost (+25%)</option>
+                                <option value="0.8">🛡 Retargeting Segment Mode (-20%)</option>
+                            </select>
+                        </div>
+
+                        <button id="btn-run-simulation" class="btn-primary w-100" style="margin-top: 15px;">
+                            <i class="fa-solid fa-play"></i> Recalculate Funnel Projections
+                        </button>
+                    </section>
+
+                    <!-- SVG CHART CONTAINER -->
+                    <section class="glass-panel">
+                        <div class="panel-header">
+                            <h2><i class="fa-solid fa-chart-column"></i> Real-time Funnel Conversion Chart</h2>
+                        </div>
+                        <div class="chart-box" id="chart-container">
+                            <!-- Dynamic SVG chart will be rendered by app.js -->
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <!-- VIEW 4: CAMPAIGN VAULT -->
+            <main id="view-vault" class="view-panel">
+                <section class="glass-panel">
+                    <div class="panel-header">
+                        <h2><i class="fa-solid fa-vault"></i> Saved Campaign Vault</h2>
+                        <button class="btn-secondary" id="btn-export-vault">
+                            <i class="fa-solid fa-file-export"></i> Export Vault JSON
+                        </button>
+                    </div>
+
+                    <div class="vault-controls">
+                        <div class="search-input-wrap">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="vault-search" class="form-control" placeholder="Search campaign titles or copy...">
+                        </div>
+                        <select id="vault-filter-channel" class="form-control" style="width: 180px;">
+                            <option value="all">All Channels</option>
+                            <option value="email">Email</option>
+                            <option value="sms">SMS</option>
+                            <option value="meta">Meta Ads</option>
+                        </select>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Campaign / Offer</th>
+                                    <th>Industry</th>
+                                    <th>Channel</th>
+                                    <th>Selected Variant</th>
+                                    <th>Date Saved</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="vault-table-body">
+                                <!-- Populated dynamically by app.js -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- External Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
